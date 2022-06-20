@@ -122,7 +122,3 @@ E o elemento li é um item dentro de uma dessas listas. Um <li> pode conter vár
 
 
 
-## Entendendo o que é Semântica
-
-
-
