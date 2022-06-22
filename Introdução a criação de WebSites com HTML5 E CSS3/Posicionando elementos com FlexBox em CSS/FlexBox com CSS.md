@@ -93,3 +93,101 @@ wrap-reverse: permite a quebra de linha assim que um dos flex itens não puder m
 
 
 
+Exemplos:
+
+
+
+**row nowrap** : row tem o padrão de direção da direita para esquerda e o **nowrap** tem o padrão que não permite quebra de linha.
+
+**wrap** - Permite quebra de linha, quando um dos flex-itens não puder ser comportado.
+
+**wrap- reverse**: permite a quebra de linhas, e faz a inversão dos itens na direção contrária.
+
+**row reverse nowrap** - sentido oposto (inversão) e não perimite quebra de linha.
+
+**row reverse wrap-reverse** - inversão + quebra de linha. na direção contrária.
+
+**row reverse wrap** - inversão + quebra de linha.
+
+
+
+### Justify content
+
+Essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendida e tratar da distribuição de espaçamento entre eles.
+
+Obs: caso seus itens estejam ocupando 100% de todo o container, ele não se aplica.
+
+
+
+**AS VARIAÇÕES**
+
+- flex-start - leva todos os elementos para o inicio de container.
+
+(.flex-start){
+
+​	justify-content: flex-start;
+
+}
+
+- flex-end - final de container. Leva todos os itens de acordo com a sobra de espaço para o final do container, respeitando o limite do conteúdo.
+
+(.flex-end){
+
+​	justify-content: flex-end;
+
+}
+
+- center - ao centro do container.
+
+(.center){
+
+​	justify-content: center;
+
+}
+
+- space-between - cria um espaçamento igual entre os elementos. Ele pega o 1º elemento, coloca muito próximo do ínicio desse container, ou seja, próximo a borda esquerda. O elemento final ele leva para a margem direita.
+
+(.space-between){
+
+​	justify-content: space-between;
+
+}**
+
+- space-around - os espaçamentos do meio são duas vezes maiores que o inicial e o final. O espaçamento do 1º elemento e do utimo são iguais.
+
+(.space-around){
+
+​	justify-content: aroundt;
+
+}
+
+
+
+Usando o column
+
+(.column){
+
+​	flex-direction: column;
+
+}
+
+- section class="container flex-start column"...
+
+Os itens são organizados em coluna única. Leva todos os elementos para o top (inicio).
+
+- section class="container flex-end column"...
+
+Leva todos os elementos para o border (final) do container.
+
+- section class="container center column"...
+
+Os elementos ficam alinhados no meio. Todo o espaço adicional que sobra, é jogado para o top  (inicio) e para o border (final) do container.
+
+- section class="container space-between column"...
+
+Coloca o 1º elemento próximo ao top (inicio), e o utimo elemento próximo ao border (final).
+
+- section class="container space-around column"...
+
+Espaçamento antes do 1º elemento e depois do utimo são iguais.
+
